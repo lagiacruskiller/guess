@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        final int secretnum = ((int)Math.random() * 9)+1;
+        final int secretnum = (int)(Math.random()*9+1);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         guessbox = findViewById(R.id.guessbox);
