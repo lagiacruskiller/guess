@@ -10,7 +10,7 @@
         android:id="@+id/board"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="270dp"
         android:text="Guess a Number"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -50,5 +50,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/colorBackgroundFloating" />
+
+    <TextView
+        android:id="@+id/gameturnbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Game Turn: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guessedbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attempted Guess: "
+        app:layout_constraintBottom_toTopOf="@+id/board"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintTop_toBottomOf="@+id/face" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
